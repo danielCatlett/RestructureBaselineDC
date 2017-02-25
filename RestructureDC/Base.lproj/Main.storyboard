@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RestructureDC" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +21,79 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5jD-C2-GV6">
+                                <rect key="frame" x="16" y="28" width="343" height="547"/>
+                                <color key="backgroundColor" red="0.0" green="0.85024692357512954" blue="0.11085454415325162" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7gR-62-V19">
+                                <rect key="frame" x="16" y="575" width="172" height="42"/>
+                                <color key="backgroundColor" red="0.85024692357512954" green="0.013152822826900315" blue="0.050796280308284238" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="XTH-v3-ylA"/>
+                                </constraints>
+                                <state key="normal" title="Action 1">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PrA-vu-25j">
+                                <rect key="frame" x="16" y="617" width="172" height="42"/>
+                                <color key="backgroundColor" red="0.85024692357512954" green="0.029437703671072877" blue="0.78965009567247957" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="a5e-cE-EFt"/>
+                                </constraints>
+                                <state key="normal" title="Action 2">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gHZ-gd-7H4">
+                                <rect key="frame" x="187" y="617" width="172" height="42"/>
+                                <color key="backgroundColor" red="0.059198445148803805" green="0.75308064121689888" blue="0.85024692357512954" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="8vA-KO-r7M"/>
+                                </constraints>
+                                <state key="normal" title="Action 4">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FgH-hN-Gla">
+                                <rect key="frame" x="187" y="575" width="172" height="42"/>
+                                <color key="backgroundColor" red="0.049592245364244655" green="0.063580354730965044" blue="0.85024692357512954" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="U9E-kR-KY8"/>
+                                </constraints>
+                                <state key="normal" title="Action 3">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="FgH-hN-Gla" secondAttribute="bottom" constant="50" id="4DB-iL-aUv"/>
+                            <constraint firstItem="FgH-hN-Gla" firstAttribute="width" secondItem="7gR-62-V19" secondAttribute="width" id="4a9-uF-fyx"/>
+                            <constraint firstItem="5jD-C2-GV6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="6SI-bZ-Yzs"/>
+                            <constraint firstItem="gHZ-gd-7H4" firstAttribute="width" secondItem="7gR-62-V19" secondAttribute="width" id="FAB-W2-uRE"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="PrA-vu-25j" secondAttribute="leading" id="HVn-ef-r2m"/>
+                            <constraint firstItem="FgH-hN-Gla" firstAttribute="leading" secondItem="7gR-62-V19" secondAttribute="trailing" constant="-1" id="MMH-iO-CrP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="FgH-hN-Gla" secondAttribute="trailing" id="PDb-BA-mQo"/>
+                            <constraint firstItem="gHZ-gd-7H4" firstAttribute="leading" secondItem="PrA-vu-25j" secondAttribute="trailing" constant="-1" id="RxS-0K-vOq"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7gR-62-V19" secondAttribute="bottom" constant="50" id="Ugm-th-99O"/>
+                            <constraint firstItem="5jD-C2-GV6" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="VeN-6h-CjW"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="7gR-62-V19" secondAttribute="leading" id="XS3-yW-p6j"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="PrA-vu-25j" secondAttribute="bottom" constant="8" id="fvn-Fi-4Np"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="gHZ-gd-7H4" secondAttribute="bottom" constant="8" id="k1Y-H5-yIR"/>
+                            <constraint firstItem="gHZ-gd-7H4" firstAttribute="top" secondItem="FgH-hN-Gla" secondAttribute="bottom" id="nBX-jC-cgc"/>
+                            <constraint firstItem="7gR-62-V19" firstAttribute="top" secondItem="5jD-C2-GV6" secondAttribute="bottom" id="sps-Rl-ree"/>
+                            <constraint firstItem="5jD-C2-GV6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="uCL-PO-AA5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gHZ-gd-7H4" secondAttribute="trailing" id="y95-t9-vgc"/>
+                            <constraint firstItem="PrA-vu-25j" firstAttribute="top" secondItem="7gR-62-V19" secondAttribute="bottom" id="z8J-LC-lRc"/>
+                            <constraint firstItem="PrA-vu-25j" firstAttribute="width" secondItem="7gR-62-V19" secondAttribute="width" id="zRb-d7-VFS"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
         </scene>
     </scenes>
 </document>
